@@ -1,0 +1,161 @@
+/* .card-container {
+  height: 25%;
+}
+
+.card-front {
+  background-image: url("../../../public/images/bg-card-front.png");
+  color: #fff;
+  margin-left: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  object-fit: cover;
+  border-radius: 1rem;
+  z-index: 10;
+}
+
+.card-back {
+  background-image: url("../../../public/images/bg-card-back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  object-fit: cover;
+  border-radius: 1rem;
+  z-index: 10;
+} */
+
+.card-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-front {
+  background-image: url("../../assets/bg-card-front.png");
+  /* background-color: aquamarine; */
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1rem;
+  height: 25rem;
+  width: 40rem;
+  margin-bottom: 3rem;
+  transform: translateX(15rem);
+
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-front > * {
+  color: var(--color-white);
+}
+
+.card-front .card-logo {
+  margin-bottom: 15%;
+}
+
+.card-front .card-number {
+  margin-bottom: 7%;
+  font-weight: 500;
+  letter-spacing: 3px;
+  /* font-size: 2rem; */
+}
+
+.card-front .credentials {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.card-front .credentials h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.card-front .credentials p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.card-back {
+  background-image: url("../../assets/bg-card-back.png");
+  /* background-color: aquamarine; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1rem;
+  height: 25rem;
+  width: 40rem;
+  transform: translateX(25rem);
+
+  position: relative;
+}
+
+.card-back p {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 38%;
+  left: 80%;
+}
+
+@media only screen and (max-width: 900px) {
+  .card-container {
+    display: block;
+    position: relative;
+  }
+  .card-front {
+    background-size: cover;
+    position: absolute;
+    height: 65%;
+    width: 80%;
+    margin-bottom: 0;
+    padding: 1rem;
+    /* transform: translate(3rem, 15rem); */
+    transform: none;
+    left: 5%;
+    top: 50%;
+    z-index: 10;
+  }
+
+  .card-back {
+    background-size: cover;
+
+    height: 65%;
+    width: 80%;
+    margin-bottom: 0;
+    padding: 1rem;
+    transform: none;
+    left: 20%;
+    top: 10%;
+  }
+
+  .card-front .card-logo {
+    margin-bottom: 8%;
+    height: 6rem;
+    width: 9rem;
+    object-fit: contain;
+  }
+
+  .card-front .card-number {
+    font-size: 1.6rem;
+  }
+
+  .card-front .credentials h2,
+  .card-front .credentials p {
+    font-size: 1.2rem;
+  }
+  .card-back p {
+    font-size: 1.2rem;
+    top: 45%;
+  }
+}

@@ -1,0 +1,35 @@
+.main-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.inner-container {
+  height: 100%;
+}
+
+.left-side {
+  background-image: url("../../public/images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-position: center; */
+}
+
+.right-side {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .main-container {
+    /* display: none; */
+    overflow: hidden;
+  }
+  .left-side {
+    background-image: url("../../public/images/bg-main-mobile.png");
+    height: 35%;
+  }
+}

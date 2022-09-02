@@ -1,0 +1,28 @@
+.thanks-container {
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks-logo {
+  margin-bottom: 2rem;
+}
+
+.thanks-container h1 {
+  color: var(--color-dark-violet);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.thanks-container p {
+  color: var(--color-dark-grayish-violet);
+  font-size: 1.6rem;
+  margin: 0;
+  margin-bottom: 3rem;
+}
